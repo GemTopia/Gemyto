@@ -17,6 +17,7 @@ contract Gemyto{
     constructor(){
         _name = "Gemyto";
         _symbol = "Gem";
+        //change this part
         _decimal = 5;
         _totalSupply = 1000000000;
         balances[msg.sender] = 1000000000;
