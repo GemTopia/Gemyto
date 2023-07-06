@@ -15,12 +15,16 @@ contract Gemyto{
     event Approval(address indexed _owner, address indexed _spender, uint256 _va);
 
     constructor(){
-        _name = "Gemyto";
+        _name = "Gemyto Token";
         _symbol = "Gem";
         //change this part
-        _decimal = 5;
-        _totalSupply = 1000000000;
-        balances[msg.sender] = 1000000000;
+        _decimal = 18;
+        _totalSupply = 560000000 * (10 ** uint256(_decimal));
+
+        uint256 initialSupply = 400000000 * (10 ** uint256(_decimal));//for crowdsale
+        balances[msg.sender] = initialSupply;
+        balances[0xB55AAecA85c42AAa7Ac7f8756bf759fAbB773f02] = (_totalSupply - initialSupply)/2;//for GemytoTeam
+        balances[0x6Ca302EF773EFd509C4bFDc78E6b17BfE5d7A68e] = (_totalSupply - initialSupply)/2;//for advisors
     }
 
     function name() public  view returns (string memory){
