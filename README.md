@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+
 # Gemyto
 A local token that is used to earn money on GemTopia site.
+Contract address in sepolia network: 0x09126279272F568515111d5796368Dfc85A1Dd7C
 =======
 # Sample Hardhat Project
 
