@@ -5,7 +5,7 @@ module.exports = {
   solidity: "0.8.18",
   networks: {
     sepolia: {
-      url: process.env.INFURA_RINKEBY_ENDPOINT,
+      url: process.env.INFURA_SEPOLIA_ENDPOINT,
       accounts: [process.env.PRIVATE_KEY],
     }
   }

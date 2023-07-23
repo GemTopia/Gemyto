@@ -16,7 +16,7 @@ contract Gemyto{
 
     constructor(){
         _name = "Gemyto Token";
-        _symbol = "Gem";
+        _symbol = "Gemy";
         //change this part
         _decimal = 18;
         _totalSupply = 560000000 * (10 ** uint256(_decimal));
